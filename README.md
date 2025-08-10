@@ -83,8 +83,10 @@ npx playwright test signup.spec.js --project=chromium
 ├── .env               
 ├── package.json
 
-Project Root Overview
+Project Root Overview : 
+
 pages/
+
 Contains Page Object Model (POM) files. Each file represents a web page or a component with locators and methods to interact with the page. This improves code reusability and maintainability.
 
 LoginPage.js — Handles login page interactions
@@ -93,21 +95,30 @@ SignupPage.js — Handles signup page interactions
 
 DashboardPage.js — Handles dashboard page interactions after login/signup
 
+
 tests/
+
 Contains Playwright test scripts organized by feature or flow. These tests use the page objects from pages/ to perform UI automation.
 
 login.spec.js — Tests related to the login functionality
 
 signup.spec.js — Tests related to the signup functionality
 
+
 playwright.config.js
+
 The configuration file for Playwright test runner. Defines global settings such as base URL, browser projects (Chromium, Firefox, Webkit), timeouts, retries, headless mode, and test directories.
 
+
 .env
+
 Environment variables file used to securely store sensitive data like email and password credentials. This keeps secrets out of your codebase.
 
+
 package.json
+
 Manages project dependencies, scripts, and metadata. This file declares which npm packages are used (e.g., Playwright) and how to run tests or other scripts.
+
 
 
 
