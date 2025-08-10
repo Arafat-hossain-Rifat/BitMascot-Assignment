@@ -43,29 +43,29 @@ For signup tests, Gmail aliasing (yourname+random123@gmail.com) is used to gener
 
 ▶️ Running the Tests
 
-Run all tests
+Run all tests :
 
 npx playwright test
 
-Run tests in headed mode
+Run tests in headed mode :
 
 npx playwright test --headed
 
-Run tests in a specific browser
+Run tests in a specific browser :
 
 npx playwright test --project=chromium
 npx playwright test --project=firefox
 npx playwright test --project="Mobile Chrome"
 
-Run only login tests
+Run only login tests :
 
 npx playwright test -g "@login"
 
-Run only signup tests
+Run only signup tests :
 
 npx playwright test -g "@signup"
 
-Run any specific test in a specific browser
+Run any specific test in a specific browser :
 
 npx playwright test signup.spec.js --project=chromium
 
